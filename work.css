@@ -1,0 +1,1000 @@
+/* =========================================================
+   WORK PAGE — SPECIFIC STYLES
+========================================================= */
+
+.work-page-bg {
+    background-size: 100% auto;
+}
+
+/* =========================================================
+   NAV ACTIVE STATE
+========================================================= */
+
+.nav-active {
+    color: #FBC981 !important;
+}
+
+.work-hero {
+    overflow: visible;
+}
+
+.work-hero .navbar-container {
+    padding: 0 24px;
+    z-index: 100;
+    border-bottom: 1px solid transparent;
+    transition:
+        background 0.4s ease,
+        backdrop-filter 0.4s ease,
+        -webkit-backdrop-filter 0.4s ease,
+        border-color 0.4s ease;
+}
+
+/* =========================================================
+   WORK HERO
+========================================================= */
+
+.work-hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px 0 100px;
+    gap: 0;
+}
+
+.work-hero-content {
+    padding: 0 40px;
+    margin-top: 88px;
+    text-align: center;
+    max-width: 1400px;
+    margin-inline: auto;
+}
+
+.work-hero-tag {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    color: #FBC981;
+    margin-bottom: 24px;
+}
+
+.work-hero-title {
+    font-size: clamp(42px, 5vw, 64px);
+    font-weight: 700;
+    line-height: 0.9;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    max-width: 1400px;
+    margin-inline: auto;
+}
+
+.work-hero-subtitle {
+    margin-top: 24px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #b8b8b8;
+    max-width: 480px;
+    margin-inline: auto;
+}
+
+.work-hero-buttons {
+    margin-top: 42px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn-work-outline {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 14px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-work-outline:hover {
+    background: #FBC981;
+}
+
+.btn-work-ghost {
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 12px 22px;
+    font-size: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-work-ghost:hover {
+    border-color: #FBC981;
+    color: #FBC981;
+}
+
+/* =========================================================
+   HERO BENTO SECTION
+========================================================= */
+
+.hero-bento-section {
+
+    width: 100%;
+
+    padding:
+        100px 100px 0;
+}
+
+/* =========================================================
+   WRAPPER
+========================================================= */
+
+.hero-bento-wrapper {
+
+    width: 100%;
+    max-width: 1440px;
+
+    margin: 0 auto;
+
+    display: flex;
+    gap: 16px;
+
+    align-items: stretch;
+}
+
+/* =========================================================
+   LEFT COLUMN
+========================================================= */
+
+.bento-left-column {
+
+    width: 454px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+/* =========================================================
+   PROFILE CARD
+========================================================= */
+
+.bento-profile-card {
+
+    height: 94px;
+
+    padding: 24px;
+
+    border-radius: 16px;
+
+    background: #0A0A0A;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.bento-logo {
+
+    width: 32px;
+    height: 32px;
+
+    object-fit: contain;
+}
+
+.bento-profile-card span {
+
+    color: #ffffff;
+
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* =========================================================
+   TOP SMALL GRID
+========================================================= */
+
+.bento-top-grid {
+
+    display: flex;
+    gap: 16px;
+
+    height: 133px;
+}
+
+.bento-top-grid .bento-card:first-child {
+
+    flex: 1;
+}
+
+.bento-top-grid .bento-card:last-child {
+
+    width: 186px;
+}
+
+/* =========================================================
+   LARGE IMAGE
+========================================================= */
+
+.bento-large-image {
+
+    height: 226px;
+}
+
+/* =========================================================
+   CENTER COLUMN
+========================================================= */
+
+.bento-center-column {
+
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+/* =========================================================
+   MAIN VISUAL
+========================================================= */
+
+.bento-main-visual {
+
+    height: 329px;
+}
+
+/* =========================================================
+   STATS CARD
+========================================================= */
+
+.bento-stats-card {
+
+    flex: 1;
+
+    background: #0A0A0A;
+
+    border-radius: 24px;
+
+    padding: 32px;
+
+    display: flex;
+    gap: 24px;
+}
+
+.stats-number {
+
+    font-size: 39px;
+
+    color: rgba(255, 255, 255, 0.16);
+
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+.stats-content {
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.stats-content span {
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-size: 14px;
+    color: #FFAC1D;
+
+    font-size: 16px;
+}
+
+.stats-content h3 {
+
+    color: #ffffff;
+
+    font-size: 16px;
+
+    line-height: 1.4;
+}
+
+/* =========================================================
+   QUOTE CARD
+========================================================= */
+
+.bento-quote-card {
+
+    flex: 1;
+
+    padding: 40px;
+
+    border-radius: 16px;
+
+    background:
+        radial-gradient(ellipse 71.55% 98.62% at 56.70% 105.66%,
+            #FFAC1D 0%,
+            #931900 53%,
+            #000000 100%);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+
+
+/* =========================================================
+   QUOTE ICON
+========================================================= */
+
+.quote-icon {
+    font-size: 120px;
+    line-height: 0.7;
+    height: 40px;
+    display: flex;
+    align-items: flex-start;
+    color: rgba(255, 255, 255, 0.12);
+    /* margin-bottom: -6px; */
+}
+
+/* =========================================================
+   QUOTE TEXT
+========================================================= */
+
+.bento-quote-card h3 {
+
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+
+    font-size: clamp(16px, 3vw, 24px);
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.03em;
+
+    color: #ffffff;
+
+    max-width: 90%;
+}
+
+.bento-quote-card span {
+
+    color: #FFAC1D;
+}
+
+/* =========================================================
+   BASE CARD
+========================================================= */
+
+.bento-card {
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    background: #0A0A0A;
+}
+
+/* =========================================================
+   IMAGES
+========================================================= */
+
+.bento-card img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* =========================================================
+   HOVER EFFECT
+========================================================= */
+
+.bento-card,
+.bento-profile-card,
+.bento-stats-card,
+.bento-quote-card {
+
+    transition:
+        transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.45s ease;
+}
+
+.bento-card:hover,
+.bento-profile-card:hover,
+.bento-stats-card:hover,
+.bento-quote-card:hover {
+
+    transform: translateY(-4px);
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .hero-bento-section {
+
+        padding: 60px 40px 0;
+    }
+
+    .hero-bento-wrapper {
+
+        flex-direction: column;
+    }
+
+    .bento-left-column {
+
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hero-bento-section {
+
+        padding: 40px 20px 0;
+    }
+
+    .bento-top-grid {
+
+        flex-direction: column;
+
+        height: auto;
+    }
+
+    .bento-top-grid .bento-card:last-child {
+
+        width: 100%;
+    }
+
+    .bento-card,
+    .bento-main-visual,
+    .bento-large-image {
+
+        height: 240px;
+    }
+
+    .bento-quote-card {
+
+        min-height: 320px;
+    }
+
+}
+
+.work-preview-card {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: #080808;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Subtle golden glow overlay — visual detail */
+.work-preview-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 60% 40%,
+            rgba(251, 201, 129, 0.04) 0%,
+            transparent 65%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* The actual project preview image fills the card */
+.work-preview-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+}
+
+/* =========================================================
+   PROJECTS SECTION
+========================================================= */
+
+.projects-section {
+    position: relative;
+    width: 100%;
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+
+.projects-slider-wrap {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.projects-track {
+    display: flex;
+    width: 100%;
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+}
+
+.project-slide {
+    min-width: 100%;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.projects-inner {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(320px, 460px) minmax(500px, 1fr);
+
+    align-items: center;
+    gap: 80px;
+
+    box-sizing: border-box;
+
+    position: relative;
+    isolation: isolate;
+
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+
+    background: rgba(255, 255, 255, 0.02);
+
+    backdrop-filter: blur(80px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.projects-inner::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    border-radius: inherit;
+
+    background:
+        linear-gradient(135deg,
+            rgba(255, 255, 255, 0.03),
+            rgba(255, 255, 255, 0.01));
+
+    pointer-events: none;
+
+    z-index: -1;
+}
+
+.project-info {
+    max-width: 460px;
+}
+
+.project-tag {
+    color: #FBC981;
+    font-size: 12px;
+    margin-bottom: 18px;
+}
+
+.project-title {
+    font-size: 42px;
+    line-height: 0.98;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+
+.project-title .highlight {
+    color: #FBC981;
+}
+
+.project-desc {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.65;
+    color: #b8b8b8;
+    max-width: 400px;
+    margin-bottom: 44px;
+}
+
+.project-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.case-study-btn {
+    height: 46px;
+    padding: 0 14px;
+    border: none;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.case-study-btn:hover {
+    background: #FBC981;
+    transform: translateY(-2px);
+}
+
+.project-next-btn {
+    width: 46px;
+    height: 46px;
+    border: none;
+    background: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.project-next-btn:hover {
+    background: #FBC981;
+    transform: translateX(4px);
+}
+
+/* =========================================================
+   MOCKUP
+========================================================= */
+
+.project-mockup-wrap {
+    width: 100%;
+}
+
+.project-mockup-card {
+    width: 100%;
+    aspect-ratio: 1.45 / 1;
+    border-radius: 40px;
+    overflow: hidden;
+    background: transparent;
+    position: relative;
+    isolation: isolate;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.mockup-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transform: scale(0.94);
+    transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    display: block;
+}
+
+.project-slide.active-project .mockup-image {
+    transform: scale(1);
+}
+
+.project-mockup-card,
+.mockup-image,
+.projects-track {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.contact .contact-card {
+    height: auto;
+    max-height: none;
+    overflow: visible;
+}
+
+/* =========================================================
+   FORM SUCCESS MESSAGE
+========================================================= */
+
+.form-success-message {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    color: #FBC981;
+    font-size: 14px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 1px solid rgba(251, 201, 129, 0.3);
+    border-radius: 10px;
+    background: rgba(251, 201, 129, 0.06);
+}
+
+.form-success-message.show {
+    display: block;
+    animation: successFade 0.45s ease forwards;
+}
+
+@keyframes successFade {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================================
+   RESPONSIVE — LARGE DESKTOP (≤ 1440px)
+========================================================= */
+
+@media (max-width: 1440px) {
+
+    .projects-inner {
+        padding: 100px 72px;
+        gap: 72px;
+    }
+
+    .work-hero-content {
+        padding: 0 56px;
+    }
+
+    .work-hero-preview {
+        padding: 0 56px;
+    }
+
+}
+
+/* =========================================================
+   RESPONSIVE — DESKTOP (≤ 1200px)
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .work-hero-title {
+        font-size: 54px;
+        line-height: 0.92;
+    }
+
+    .projects-inner {
+        grid-template-columns: 1fr;
+        gap: 72px;
+        padding: 0 56px;
+    }
+
+    .project-info {
+        max-width: 640px;
+    }
+
+    .project-mockup-card {
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 1.5 / 1;
+    }
+
+}
+
+/* =========================================================
+   RESPONSIVE — TABLET (≤ 992px)
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .work-hero {
+        padding-top: 24px;
+        padding-bottom: 80px;
+    }
+
+    .work-hero-content {
+        padding: 0 40px;
+        margin-top: 72px;
+    }
+
+    .work-hero-title {
+        font-size: 46px;
+        line-height: 0.95;
+        letter-spacing: -1px;
+    }
+
+    .work-hero-subtitle {
+        font-size: 15px;
+        max-width: 520px;
+    }
+
+    .work-preview-card {
+        height: 420px;
+        border-radius: 28px;
+    }
+
+    .projects-section {
+        padding: 90px 0;
+    }
+
+    .projects-inner {
+        padding: 0 40px;
+        gap: 56px;
+    }
+
+    .project-title {
+        font-size: 54px;
+        line-height: 0.95;
+    }
+
+    .project-desc {
+        font-size: 15px;
+        max-width: 520px;
+    }
+
+    .project-mockup-card {
+        border-radius: 32px;
+    }
+
+}
+
+/* =========================================================
+   RESPONSIVE — MOBILE (≤ 768px)
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .work-hero {
+        min-height: auto;
+        padding-top: 20px;
+        padding-bottom: 72px;
+    }
+
+    .work-hero-content {
+        padding: 0 24px;
+        margin-top: 52px;
+        text-align: left;
+    }
+
+    .work-hero-tag {
+        font-size: 11px;
+        margin-bottom: 18px;
+    }
+
+    .work-hero-title {
+        font-size: 34px;
+        line-height: 0.98;
+        letter-spacing: -1.4px;
+        max-width: 100%;
+    }
+
+    .work-hero-subtitle {
+        font-size: 14px;
+        line-height: 1.55;
+        max-width: 100%;
+        margin-inline: 0;
+    }
+
+    .work-hero-buttons {
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: start;
+        gap: 12px;
+        margin-top: 32px;
+    }
+
+    .btn-work-outline,
+    .btn-work-ghost {
+        width: auto;
+        height: 50px;
+    }
+
+    .work-hero-preview {
+        padding: 0 24px;
+        margin-top: 44px;
+    }
+
+    .work-preview-card {
+        height: 100%;
+        border-radius: 16px;
+    }
+
+    /* ── Projects ── */
+
+    .projects-section {
+        padding: 72px 0;
+    }
+
+    .projects-inner {
+        padding: 0 24px;
+        gap: 40px;
+    }
+
+    .project-info {
+        max-width: 100%;
+    }
+
+    .project-tag {
+        font-size: 11px;
+        margin-bottom: 14px;
+    }
+
+    .project-title {
+        font-size: 34px;
+        line-height: 0.98;
+        letter-spacing: -1px;
+        margin-bottom: 26px;
+    }
+
+    .project-desc {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 32px;
+        max-width: 100%;
+    }
+
+    .project-actions {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .case-study-btn {
+        flex: 1;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .project-next-btn {
+        width: 50px;
+        height: 50px;
+        flex-shrink: 0;
+    }
+
+    .project-mockup-card {
+        aspect-ratio: auto;
+        border-radius: 24px;
+    }
+
+    .mockup-image {
+        object-fit: cover;
+        transform: scale(1);
+    }
+
+}
+
+/* =========================================================
+   RESPONSIVE — SMALL MOBILE (≤ 540px)
+========================================================= */
+
+@media (max-width: 540px) {
+
+    .work-hero-title {
+        font-size: 30px;
+    }
+
+    .project-title {
+        font-size: 30px;
+    }
+
+    .projects-inner {
+        padding: 0 20px;
+    }
+
+    .work-hero-content {
+        padding: 0 20px;
+    }
+
+    .work-hero-preview {
+        padding: 0 20px;
+    }
+
+}
