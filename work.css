@@ -536,6 +536,7 @@
 .projects-inner {
     width: 100%;
     max-width: 1600px;
+
     margin: 0 auto;
 
     display: grid;
@@ -549,9 +550,8 @@
     position: relative;
     isolation: isolate;
 
-    padding-top: 120px;
-    padding-bottom: 120px;
-
+    /* FIXED */
+    padding: 120px 80px;
 
     background: rgba(255, 255, 255, 0.02);
 
