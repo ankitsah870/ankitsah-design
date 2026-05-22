@@ -1,3 +1,6 @@
+/* =========================================================
+   WORK PAGE — SPECIFIC STYLES
+========================================================= */
 
 .work-page-bg {
     background-size: 100% auto;
@@ -6,10 +9,6 @@
 /* =========================================================
    NAV ACTIVE STATE
 ========================================================= */
-
-.nav-active {
-    color: #FBC981 !important;
-}
 
 .work-hero {
     overflow: visible;
@@ -85,7 +84,7 @@
     background: #fff;
     color: #000;
     border: none;
-    padding: 14px 24px;
+    padding: 14px 22px;
     font-size: 15px;
     font-weight: 600;
     font-family: inherit;
@@ -98,15 +97,34 @@
 }
 
 .btn-work-ghost {
-    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 56px;
+
+    padding: 0 28px;
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
     background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    padding: 12px 22px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
     font-size: 14px;
-    font-family: inherit;
-    cursor: pointer;
-    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    font-weight: 500;
+    line-height: 1;
+
+    letter-spacing: 0.04em;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
 }
 
 .btn-work-ghost:hover {
@@ -441,7 +459,7 @@
 
     .hero-bento-section {
 
-        padding: 40px 20px 0;
+        padding: 100px 20px 0;
     }
 
     .bento-top-grid {
@@ -536,7 +554,6 @@
 .projects-inner {
     width: 100%;
     max-width: 1600px;
-
     margin: 0 auto;
 
     display: grid;
@@ -550,8 +567,9 @@
     position: relative;
     isolation: isolate;
 
-    /* FIXED */
-    padding: 120px 80px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+
 
     background: rgba(255, 255, 255, 0.02);
 
