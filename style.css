@@ -553,7 +553,7 @@ section {
 .hero-text p {
     margin-top: 18px;
     max-width: 420px;
-    color: #b8b8b8;
+    color: #fff;
     font-size: 14px;
     line-height: 1.6;
 }
@@ -575,7 +575,7 @@ section {
     max-width: 460px;
     font-size: 13px;
     line-height: 1.6;
-    color: #b5b5b5;
+    color: #fff;
 }
 
 .scroll {
