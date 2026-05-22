@@ -527,7 +527,7 @@
 .projects-section {
     position: relative;
     width: 100%;
-    padding: 120px 0;
+    padding: 120px 100px;
     overflow: hidden;
 }
 
