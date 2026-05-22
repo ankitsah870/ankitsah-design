@@ -367,7 +367,7 @@
 
         });
 
-       
+
         /* =========================================================
            FINAL REFRESH
         ========================================================= */
@@ -378,4 +378,47 @@
 
     init();
 
-})();
+})();/* =========================================================
+   MOBILE SIDEBAR
+========================================================= */
+
+const mobileMenuBtn = document.querySelector(".mobile-menu-toggle");
+
+const mobileSidebar = document.querySelector(".mobile-sidebar");
+
+const mobileOverlay = document.querySelector(".mobile-overlay");
+
+const mobileClose = document.querySelector(".mobile-close");
+
+function openMobileMenu() {
+
+    mobileSidebar.classList.add("active");
+
+    mobileOverlay.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+}
+
+function closeMobileMenu() {
+
+    mobileSidebar.classList.remove("active");
+
+    mobileOverlay.classList.remove("active");
+
+    document.body.style.overflow = "";
+}
+
+if (mobileMenuBtn) {
+
+    mobileMenuBtn.addEventListener("click", openMobileMenu);
+}
+
+if (mobileClose) {
+
+    mobileClose.addEventListener("click", closeMobileMenu);
+}
+
+if (mobileOverlay) {
+
+    mobileOverlay.addEventListener("click", closeMobileMenu);
+}
