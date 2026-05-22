@@ -19,18 +19,18 @@ window.addEventListener("beforeunload", function () {
 function showSuccessMessage(el) {
     if (!el) return;
 
-    if (el._hideTimer)      { clearTimeout(el._hideTimer);      el._hideTimer      = null; }
+    if (el._hideTimer) { clearTimeout(el._hideTimer); el._hideTimer = null; }
     if (el._hideTransTimer) { clearTimeout(el._hideTransTimer); el._hideTransTimer = null; }
 
-    el.style.transition    = "none";
-    el.style.opacity       = "0";
-    el.style.maxHeight     = "0px";
-    el.style.overflow      = "hidden";
-    el.style.marginTop     = "0px";
-    el.style.paddingTop    = "0px";
+    el.style.transition = "none";
+    el.style.opacity = "0";
+    el.style.maxHeight = "0px";
+    el.style.overflow = "hidden";
+    el.style.marginTop = "0px";
+    el.style.paddingTop = "0px";
     el.style.paddingBottom = "0px";
-    el.style.display       = "block";
-    el.style.visibility    = "visible";
+    el.style.display = "block";
+    el.style.visibility = "visible";
 
     requestAnimationFrame(function () {
         requestAnimationFrame(function () {
@@ -42,10 +42,10 @@ function showSuccessMessage(el) {
                 "padding-top 0.35s " + EASE + ", " +
                 "padding-bottom 0.35s " + EASE;
 
-            el.style.opacity       = "1";
-            el.style.maxHeight     = "120px";
-            el.style.marginTop     = "16px";
-            el.style.paddingTop    = "12px";
+            el.style.opacity = "1";
+            el.style.maxHeight = "120px";
+            el.style.marginTop = "16px";
+            el.style.paddingTop = "12px";
             el.style.paddingBottom = "12px";
 
             el._hideTimer = setTimeout(function () {
@@ -66,24 +66,24 @@ function hideSuccessMessage(el) {
         "padding-top 0.4s " + EASE + " 0.05s, " +
         "padding-bottom 0.4s " + EASE + " 0.05s";
 
-    el.style.opacity       = "0";
-    el.style.maxHeight     = "0px";
-    el.style.marginTop     = "0px";
-    el.style.paddingTop    = "0px";
+    el.style.opacity = "0";
+    el.style.maxHeight = "0px";
+    el.style.marginTop = "0px";
+    el.style.paddingTop = "0px";
     el.style.paddingBottom = "0px";
 
     el._hideTransTimer = setTimeout(function () {
-        el.style.transition    = "";
-        el.style.display       = "none";
-        el.style.visibility    = "";
-        el.style.maxHeight     = "";
-        el.style.marginTop     = "";
-        el.style.paddingTop    = "";
+        el.style.transition = "";
+        el.style.display = "none";
+        el.style.visibility = "";
+        el.style.maxHeight = "";
+        el.style.marginTop = "";
+        el.style.paddingTop = "";
         el.style.paddingBottom = "";
-        el.style.opacity       = "";
-        el.style.overflow      = "";
-        el._hideTimer          = null;
-        el._hideTransTimer     = null;
+        el.style.opacity = "";
+        el.style.overflow = "";
+        el._hideTimer = null;
+        el._hideTransTimer = null;
     }, 500);
 }
 
@@ -105,12 +105,12 @@ function init() {
        DESKTOP: Pre-hide ALL hero elements via gsap.set()
     ========================================================= */
     if (!isMobile) {
-        gsap.set(".navbar-container",        { opacity: 0, y: -30 });
-        gsap.set(".hero-text h1",            { opacity: 0, y: 80  });
-        gsap.set(".hero-text p",             { opacity: 0, y: 40  });
-        gsap.set(".hero-buttons",            { opacity: 0, y: 30  });
-        gsap.set(".scroll",                  { opacity: 0, y: 20  });
-        gsap.set(".hero-note",               { opacity: 0, y: 20  });
+        gsap.set(".navbar-container", { opacity: 0, y: -30 });
+        gsap.set(".hero-text h1", { opacity: 0, y: 80 });
+        gsap.set(".hero-text p", { opacity: 0, y: 40 });
+        gsap.set(".hero-buttons", { opacity: 0, y: 30 });
+        gsap.set(".scroll", { opacity: 0, y: 20 });
+        gsap.set(".hero-note", { opacity: 0, y: 20 });
     }
 
     /* =========================================================
@@ -133,8 +133,8 @@ function init() {
         if (!elements.length) return;
 
         elements.forEach(function (el) {
-            el.style.opacity    = String(cfg.opacity);
-            el.style.transform  = "translateY(" + cfg.fromY + "px) translateX(" + cfg.fromX + "px)";
+            el.style.opacity = String(cfg.opacity);
+            el.style.transform = "translateY(" + cfg.fromY + "px) translateX(" + cfg.fromX + "px)";
             el.style.transition = "none";
         });
 
@@ -142,7 +142,7 @@ function init() {
             entries.forEach(function (entry) {
                 if (!entry.isIntersecting) return;
 
-                var el    = entry.target;
+                var el = entry.target;
                 var index = Array.from(elements).indexOf(el);
                 var delay = index * cfg.staggerDelay;
 
@@ -151,7 +151,7 @@ function init() {
                         el.style.transition =
                             "opacity " + cfg.duration + "s " + cfg.ease + " " + delay + "ms, " +
                             "transform " + cfg.duration + "s " + cfg.ease + " " + delay + "ms";
-                        el.style.opacity   = "1";
+                        el.style.opacity = "1";
                         el.style.transform = "translateY(0) translateX(0)";
 
                         var totalMs = delay + cfg.duration * 1000 + 50;
@@ -362,8 +362,8 @@ function init() {
             var cards = document.querySelectorAll(".cred-card, .cred-card-special");
 
             cards.forEach(function (card) {
-                card.style.opacity    = "0";
-                card.style.transform  = "translateY(40px)";
+                card.style.opacity = "0";
+                card.style.transform = "translateY(40px)";
                 card.style.transition = "none";
             });
 
@@ -371,9 +371,9 @@ function init() {
                 entries.forEach(function (entry) {
                     if (!entry.isIntersecting) return;
 
-                    var card     = entry.target;
-                    var index    = Array.from(cards).indexOf(card);
-                    var delay    = index * 0.12;
+                    var card = entry.target;
+                    var index = Array.from(cards).indexOf(card);
+                    var delay = index * 0.12;
                     var duration = 650;
 
                     requestAnimationFrame(function () {
@@ -381,7 +381,7 @@ function init() {
                             card.style.transition =
                                 "opacity 0.65s cubic-bezier(0.22,1,0.36,1) " + delay + "s, " +
                                 "transform 0.65s cubic-bezier(0.22,1,0.36,1) " + delay + "s";
-                            card.style.opacity   = "1";
+                            card.style.opacity = "1";
                             card.style.transform = "translateY(0)";
 
                             setTimeout(function () {
@@ -410,7 +410,7 @@ function init() {
     if (isMobile) {
 
         observeEntrance(".work-header", { fromY: 30, duration: 0.6 });
-        observeEntrance(".work-main",   { fromY: 40, duration: 0.55, rootMargin: "0px 0px -10px 0px" });
+        observeEntrance(".work-main", { fromY: 40, duration: 0.55, rootMargin: "0px 0px -10px 0px" });
 
     } else {
 
@@ -451,7 +451,7 @@ function init() {
 
     if (isMobile) {
 
-        observeEntrance(".solve-left",  { fromX: -40, fromY: 0, duration: 0.65 });
+        observeEntrance(".solve-left", { fromX: -40, fromY: 0, duration: 0.65 });
         observeEntrance(".solve-cards", { fromY: 30, duration: 0.6, rootMargin: "0px 0px -10px 0px" });
 
     } else {
@@ -494,15 +494,15 @@ function init() {
 
     if (isMobile) {
 
-        observeEntrance(".think-left",       { fromY: 30,  duration: 0.65 });
-        observeEntrance(".think-right > *",  {
+        observeEntrance(".think-left", { fromY: 30, duration: 0.65 });
+        observeEntrance(".think-right > *", {
             fromY: 20,
             duration: 0.6,
             staggerDelay: 80,
             rootMargin: "0px 0px -10px 0px"
         });
-        observeEntrance(".think-cards",      { fromY: 20,  duration: 0.55, rootMargin: "0px 0px -5px 0px" });
-        observeEntrance(".tool-list span",   {
+        observeEntrance(".think-cards", { fromY: 20, duration: 0.55, rootMargin: "0px 0px -5px 0px" });
+        observeEntrance(".tool-list span", {
             fromY: 14,
             duration: 0.5,
             staggerDelay: 40,
@@ -648,8 +648,8 @@ function init() {
 
         var footerH2 = document.querySelector(".footer-hero h2");
         if (footerH2) {
-            footerH2.style.opacity    = "0";
-            footerH2.style.transform  = "translateY(30px)";
+            footerH2.style.opacity = "0";
+            footerH2.style.transform = "translateY(30px)";
             footerH2.style.transition = "none";
 
             var footerObserver = new IntersectionObserver(function (entries) {
@@ -660,7 +660,7 @@ function init() {
                             footerH2.style.transition =
                                 "opacity 0.65s cubic-bezier(0.22,1,0.36,1), " +
                                 "transform 0.65s cubic-bezier(0.22,1,0.36,1)";
-                            footerH2.style.opacity   = "1";
+                            footerH2.style.opacity = "1";
                             footerH2.style.transform = "translateY(0)";
                             setTimeout(function () {
                                 footerH2.style.willChange = "";
@@ -720,8 +720,8 @@ function init() {
 
             btn.addEventListener("mousemove", function (e) {
                 var rect = btn.getBoundingClientRect();
-                var x = e.clientX - rect.left - rect.width  / 2;
-                var y = e.clientY - rect.top  - rect.height / 2;
+                var x = e.clientX - rect.left - rect.width / 2;
+                var y = e.clientY - rect.top - rect.height / 2;
                 gsap.to(btn, {
                     x: x * 0.12,
                     y: y * 0.12,
@@ -747,7 +747,7 @@ function init() {
     ========================================================= */
 
     function updateTime() {
-        var now  = new Date();
+        var now = new Date();
         var time = now.toLocaleTimeString("en-IN", {
             timeZone: "Asia/Kolkata",
             hour: "2-digit",
@@ -778,10 +778,10 @@ function init() {
 
     document.querySelectorAll(".dropdown").forEach(function (dropdown) {
 
-        var trigger  = dropdown.querySelector(".dropdown-trigger");
-        var items    = dropdown.querySelectorAll(".dropdown-item");
-        var valueEl  = dropdown.querySelector(".dropdown-value");
-        var name     = dropdown.dataset.name;
+        var trigger = dropdown.querySelector(".dropdown-trigger");
+        var items = dropdown.querySelectorAll(".dropdown-item");
+        var valueEl = dropdown.querySelector(".dropdown-value");
+        var name = dropdown.dataset.name;
 
         var formGroup = dropdown.closest(".form-group");
         var input = formGroup
@@ -834,7 +834,7 @@ function init() {
        CONTACT FORM
     ========================================================= */
 
-    var form       = document.getElementById("contact-form");
+    var form = document.getElementById("contact-form");
     var successMsg = document.getElementById("form-success");
 
     if (form) {
@@ -842,20 +842,20 @@ function init() {
         form.addEventListener("submit", async function (e) {
             e.preventDefault();
 
-            var nameField    = form.querySelector('input[name="name"]');
-            var emailField   = form.querySelector('input[name="email"]');
-            var scopeInput   = form.querySelector('input[name="scope"]');
-            var budgetInput  = form.querySelector('input[name="budget"]');
+            var nameField = form.querySelector('input[name="name"]');
+            var emailField = form.querySelector('input[name="email"]');
+            var scopeInput = form.querySelector('input[name="scope"]');
+            var budgetInput = form.querySelector('input[name="budget"]');
             var messageField = form.querySelector('textarea[name="message"]');
 
             [nameField, emailField, messageField].forEach(function (f) {
                 if (f) f.style.borderColor = "";
             });
 
-            var scopeTrigger  = form.querySelector('.dropdown[data-name="scope"] .dropdown-trigger');
+            var scopeTrigger = form.querySelector('.dropdown[data-name="scope"] .dropdown-trigger');
             var budgetTrigger = form.querySelector('.dropdown[data-name="budget"] .dropdown-trigger');
 
-            if (scopeTrigger)  scopeTrigger.style.borderColor  = "";
+            if (scopeTrigger) scopeTrigger.style.borderColor = "";
             if (budgetTrigger) budgetTrigger.style.borderColor = "";
 
             var valid = true;
@@ -889,13 +889,13 @@ function init() {
 
             var submitBtn = form.querySelector('[type="submit"]');
             if (submitBtn) {
-                submitBtn.disabled    = true;
+                submitBtn.disabled = true;
                 submitBtn.textContent = "SENDING\u2026";
             }
 
             try {
 
-                var data     = new FormData(form);
+                var data = new FormData(form);
                 var response = await fetch(form.action, {
                     method: "POST",
                     body: data,
@@ -909,8 +909,8 @@ function init() {
                     document.querySelectorAll(".dropdown").forEach(function (dropdown) {
                         var valEl = dropdown.querySelector(".dropdown-value");
                         var dName = dropdown.dataset.name;
-                        var dGrp  = dropdown.closest(".form-group");
-                        var dInp  = dGrp ? dGrp.querySelector('input[name="' + dName + '"]') : null;
+                        var dGrp = dropdown.closest(".form-group");
+                        var dInp = dGrp ? dGrp.querySelector('input[name="' + dName + '"]') : null;
 
                         if (valEl) {
                             valEl.textContent = dName === "budget" ? "Estimated budget" : "Select scope";
@@ -922,7 +922,7 @@ function init() {
                     });
 
                     if (submitBtn) {
-                        submitBtn.disabled    = false;
+                        submitBtn.disabled = false;
                         submitBtn.textContent = "CONTACT ME";
                     }
 
@@ -945,7 +945,7 @@ function init() {
                 } else {
 
                     if (submitBtn) {
-                        submitBtn.disabled    = false;
+                        submitBtn.disabled = false;
                         submitBtn.textContent = "CONTACT ME";
                     }
                     if (successMsg) {
@@ -959,7 +959,7 @@ function init() {
             } catch (err) {
 
                 if (submitBtn) {
-                    submitBtn.disabled    = false;
+                    submitBtn.disabled = false;
                     submitBtn.textContent = "CONTACT ME";
                 }
                 if (successMsg) {
@@ -977,3 +977,89 @@ function init() {
 } // end init()
 
 init();
+/* =========================================================
+   MOBILE SIDEBAR
+========================================================= */
+
+const mobileMenuBtn = document.querySelector(".mobile-menu-toggle");
+
+const mobileSidebar = document.querySelector(".mobile-sidebar");
+
+const mobileOverlay = document.querySelector(".mobile-overlay");
+
+const mobileClose = document.querySelector(".mobile-close");
+
+function openMobileMenu() {
+
+    mobileSidebar.classList.add("active");
+
+    const mobileLinks = document.querySelectorAll(".mobile-nav-links a");
+
+    mobileLinks.forEach((link, index) => {
+
+        setTimeout(() => {
+
+            link.style.opacity = "1";
+            link.style.transform = "translateX(0)";
+
+        }, 120 + (index * 80));
+
+    });
+
+    setTimeout(() => {
+
+        const contactBtn = document.querySelector(".mobile-contact-btn");
+
+        if (contactBtn) {
+
+            contactBtn.style.opacity = "1";
+            contactBtn.style.transform = "translateY(0)";
+        }
+
+    }, 320);
+
+    mobileOverlay.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+
+}
+
+function closeMobileMenu() {
+
+    mobileSidebar.classList.remove("active");
+
+    const mobileLinks = document.querySelectorAll(".mobile-nav-links a");
+
+    mobileLinks.forEach((link) => {
+
+        link.style.opacity = "0";
+        link.style.transform = "translateX(18px)";
+    });
+
+    const contactBtn = document.querySelector(".mobile-contact-btn");
+
+    if (contactBtn) {
+
+        contactBtn.style.opacity = "0";
+        contactBtn.style.transform = "translateY(20px)";
+    }
+
+    mobileOverlay.classList.remove("active");
+
+    document.body.style.overflow = "";
+}
+
+if (mobileMenuBtn) {
+
+    mobileMenuBtn.addEventListener("click", openMobileMenu);
+}
+
+if (mobileClose) {
+
+    mobileClose.addEventListener("click", closeMobileMenu);
+}
+
+if (mobileOverlay) {
+
+    mobileOverlay.addEventListener("click", closeMobileMenu);
+}
