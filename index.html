@@ -26,19 +26,76 @@
         <section class="hero">
 
             <header class="navbar-container">
-                <div class="logo">
-                    <img src="assets/logo.svg" alt="Ankit Sah Logo" width="50" height="50">
-                </div>
 
-                <div class="nav-right">
+                <!-- LOGO -->
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.svg" alt="Ankit Sah Logo" width="50" height="50">
+                </a>
+
+                <!-- DESKTOP NAV -->
+                <div class="nav-right desktop-nav">
+
                     <nav class="nav-links">
-                        <a href="work.html">Work</a>
-                        <!-- <a href="about.html">About Me</a> -->
+
+                        <a href="index.html" class="nav-link active-nav">
+                            <span>Home</span>
+                        </a>
+
+                        <a href="work.html" class="nav-link">
+                            <span>Work</span>
+                        </a>
+
                     </nav>
 
-                    <button class="btn-outline">Contact Us</button>
+                    <button class="btn-outline contact-scroll-btn">
+                        Contact Us
+                    </button>
+
                 </div>
+
+                <!-- MOBILE MENU -->
+                <button class="mobile-menu-toggle" aria-label="Open Menu">
+
+                    <span></span>
+                    <span></span>
+
+                </button>
+
             </header>
+
+            <!-- MOBILE SIDEBAR -->
+            <div class="mobile-sidebar">
+
+                <div class="mobile-sidebar-inner">
+
+                    <div class="mobile-sidebar-top">
+
+                        <img src="assets/logo.svg" alt="Logo">
+
+                        <button class="mobile-close">
+                            ×
+                        </button>
+
+                    </div>
+
+                    <nav class="mobile-nav-links">
+
+                        <a href="index.html">Home</a>
+
+                        <a href="work.html">Work</a>
+
+                    </nav>
+
+                    <a href="#contact" class="mobile-contact-btn">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- OVERLAY -->
+            <div class="mobile-overlay"></div>
 
             <div class="hero-content-container">
                 <div class="hero-text">
